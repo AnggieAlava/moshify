@@ -18,7 +18,7 @@
 /* Typography */
 
 html {
-  /*62.5% of 16px = 10px */
+  /* 62.5% of 16px = 10px */
   font-size: 62.5%;
 }
 
@@ -37,12 +37,13 @@ h3 {
 }
 
 h1 {
-  /* 1 xtimes of the font size of the html element */
   font-size: 7rem;
 }
+
 h2 {
   font-size: 4rem;
 }
+
 h3 {
   font-size: 3rem;
 }
@@ -55,12 +56,15 @@ p {
   body {
     font-size: 1.8rem;
   }
+
   h1 {
     font-size: 8rem;
   }
+
   h2 {
     font-size: 4rem;
   }
+
   h3 {
     font-size: 2.4rem;
   }
@@ -70,6 +74,7 @@ p {
 a {
   text-decoration: none;
 }
+
 .link-arrow {
   color: var(--color-accent);
   text-transform: uppercase;
@@ -92,8 +97,8 @@ a {
     font-size: 1.5rem;
   }
 }
-
 /* Badges */
+
 .badge {
   border-radius: 20px;
   font-size: 2rem;
@@ -104,16 +109,16 @@ a {
 
 .badge--primary {
   background: var(--color-primary);
-  color: white;
+  color: #fff;
 }
 
 .badge--secondary {
   background: var(--color-secondary);
-  color: white;
+  color: #fff;
 }
 
 .badge--small {
-  font-size: 1.6;
+  font-size: 1.6rem;
   padding: 0.5rem 1.5rem;
 }
 
@@ -121,12 +126,12 @@ a {
   .badge {
     font-size: 1.5rem;
   }
+
   .badge--small {
     font-size: 1.2rem;
   }
 }
-
-/*LIST */
+/* Lists */
 .list {
   list-style: none;
   padding-left: 0;
@@ -153,24 +158,29 @@ a {
     padding-left: 0;
   }
 }
-
-/*ICONS*/
+/* Icons */
 .icon {
   width: 40px;
   height: 40px;
 }
-/* define separate skins for this icon class */
 
 .icon--small {
   width: 30px;
   height: 30px;
 }
+
 .icon--primary {
   fill: var(--color-primary);
 }
 
 .icon--white {
   fill: #fff;
+}
+
+.icon--black {
+  stroke-width: 1.5px;
+  stroke: #fff;
+  fill: rgb(61, 59, 59);
 }
 
 .icon-container {
@@ -187,7 +197,7 @@ a {
   background: var(--color-accent);
 }
 
-/* BUTTONS */
+/* Buttons */
 .btn {
   border-radius: 40px;
   border: 0;
@@ -202,42 +212,30 @@ a {
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
-  color: white;
+  background: var(--color-primary);
+  color: #fff;
 }
+
 .btn--primary:hover {
   background: #3a8ffd;
 }
 
 .btn--secondary {
-  background-color: var(--color-secondary);
-  color: white;
+  background: var(--color-secondary);
+  color: #fff;
 }
+
 .btn--secondary:hover {
-  background: #00c8eb;
+  background: #05cdf0;
 }
+
 .btn--accent {
-  background-color: var(--color-accent);
-  color: white;
+  background: var(--color-accent);
+  color: #fff;
 }
 
 .btn--accent:hover {
   background: #ec3000;
-}
-
-.btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
-.btn--block {
-  width: 100%;
-  display: inline-block;
-}
-@media screen and (min-width: 1024px) {
-  .btn {
-    font-size: 1.5rem;
-  }
 }
 
 .btn--outline {
@@ -249,6 +247,22 @@ a {
 .btn--outline:hover {
   background: var(--color-headings);
   color: #fff;
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
 
 /* Inputs */
@@ -286,9 +300,7 @@ a {
     font-size: 1.5rem;
   }
 }
-
 /* Cards */
-
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
@@ -302,23 +314,23 @@ a {
 
 .card--primary .card__header {
   background: var(--color-primary);
-  color: white;
+  color: #fff;
 }
+
 .card--secondary .card__header {
   background: var(--color-secondary);
-  color: white;
+  color: #fff;
 }
 
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
-/* Plans  */
-
+/* Plans */
 .plan__name {
-  color: white;
+  color: #fff;
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.4rem;
 }
 
@@ -343,6 +355,7 @@ a {
 .plan .list__item {
   margin-bottom: 2rem;
 }
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -360,19 +373,20 @@ a {
   .plan__name {
     font-size: 1.4rem;
   }
+
   .plan__price {
     font-size: 5rem;
   }
+
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
+
   .plan__description {
     font-size: 1.7rem;
   }
 }
-
 /* Media */
-
 .media {
   display: flex;
 }
@@ -388,9 +402,7 @@ a {
 .media__image {
   margin-top: 1rem;
 }
-
 /* Quotes */
-
 .quote {
   font-size: 3rem;
   font-style: italic;
@@ -401,22 +413,23 @@ a {
 .quote__text::before {
   content: open-quote;
 }
+
 .quote__text::after {
   content: close-quote;
 }
 
 .quote__author {
   font-size: 3rem;
+  font-weight: 500;
   font-style: normal;
-  font-weight: 600;
   margin-bottom: 0;
 }
 
 .quote__organization {
   color: var(--color-headings);
+  opacity: 0.4;
   font-size: 2rem;
   font-style: normal;
-  opacity: 0.4;
 }
 
 .quote__line {
@@ -428,15 +441,17 @@ a {
   .quote {
     font-size: 2rem;
   }
+
   .quote__author {
     font-size: 2.4rem;
   }
+
   .quote__organization {
     font-size: 1.6rem;
   }
 }
 
-/* GRIDS */
+/* Grids */
 .grid {
   display: grid;
 }
@@ -454,13 +469,15 @@ a {
 }
 
 /* Testimonials */
-
 .testimonial {
   padding: 3rem;
 }
+
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
+
 .testimonial__image > img {
   width: 100%;
 }
@@ -472,12 +489,18 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial__image {
+    margin: 0;
+  }
+
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
   }
+
   .testimonial .quote {
     margin-left: 6rem;
+    margin-right: 0;
   }
 }
 
@@ -489,11 +512,11 @@ a {
 
 .callout--primary {
   background: var(--color-primary);
-  color: white;
+  color: #fff;
 }
 
 .callout__heading {
-  color: white;
+  color: #fff;
   margin-top: 0;
   font-size: 3rem;
 }
@@ -511,11 +534,45 @@ a {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
+
   .callout__content {
     text-align: left;
   }
+
   .callout .btn {
     justify-self: start;
     margin: 0 2rem;
   }
+}
+
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
